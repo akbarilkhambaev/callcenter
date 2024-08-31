@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    #our-projects .project-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-image,
+    .project-text {
+        padding: 0;
+    }
+}
+
+
+
