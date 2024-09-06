@@ -28,7 +28,7 @@ function prev(){
 
 var timer;
 function auto(){
-    timer = setInterval(next, 5000);
+    timer = setInterval(next, 3000);
 }
 auto();
 
@@ -47,7 +47,7 @@ for(var i = 0; i<li.length; i++){
     }
 }
 
-var slider = document.querySelector('.slider');
+var slider = document.querySelector('.slide-show');
 slider.onmouseover = function(){
     clearInterval(timer);
 }
@@ -55,3 +55,29 @@ slider.onmouseout = function(){
     auto();
 }
 
+
+var containerheader = document.querySelector('.container-header');
+var body = document.querySelector('body');
+var sliders = document.querySelector('.slide-show');
+
+function updateLayout() {
+    var bodyWidth = document.body.clientWidth; // Обновляем ширину
+
+    if (bodyWidth < 768) {
+        containerheader.classList.remove('container');
+        containerheader.classList.add('container-fluid');
+        slider.classList.remove('container');
+        slider.classList.add('container-fluid');
+    } else {
+        containerheader.classList.remove('container-fluid');
+        containerheader.classList.add('container');
+        slider.classList.add('container');
+        slider.classList.remove('container-fluid');
+    }
+
+    console.log(bodyWidth);
+}
+
+updateLayout();
+
+window.addEventListener('resize', updateLayout);

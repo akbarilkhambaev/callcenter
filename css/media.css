@@ -1,4 +1,11 @@
-@media (max-width: 768px) {
+
+@media (max-width: 575.999px) {
+    .container-header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767.999px) {
     #our-projects .project-content {
         flex-direction: column;
         text-align: center;
@@ -7,7 +14,61 @@
     .project-text {
         padding: 0;
     }
+    .text-slide p{
+        font-size: 15px !important;
+        height: 200px !important;
+    }
+    .text-slide h4, .text-slide h2, .text-slide a{
+        font-size: 70%;
+    }
+    .text-slide {
+        width: 50% !important;
+        padding-top: 10px !important;
+    }
+    .slide-img {
+        width: 50% !important;
+    }
+    .container-header {
+        width: 100% !important;
+    }
 }
 
+@media (max-width: 991.999px) {
+    .slider {
+        height: 400px !important;
+    }
+    .sliding{
+        height: 400px !important;
+    }
+    .text-slide p{
+        font-size: 15px !important;
+        height: 80% !important;
+    }
+    .text-slide h4, .text-slide h2, .text-slide a{
+        font-size: 90%;
+    }
+    .text-slide {
+        width: 50% !important;
+    }
+    .slide-img {
+        width: 50% !important;
+    }
 
+}
 
+@media (max-width: 1119.999px) {
+    .slider {
+        height: 400px !important;
+    }
+    .sliding{
+        height: 400px !important;
+    }
+    .text-slide p{
+        font-size: 15px !important;
+        height: 80% !important;
+    }
+    .text-slide h4, .text-slide h2, .text-slide a{
+        font-size: 90%;
+    }
+
+}

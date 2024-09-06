@@ -26,14 +26,13 @@
 
 .arrows{
     position: absolute;
-    width: 1450px;
+    width: 115%; /* Делаем контейнер шире слайдера */
     display: flex;
     justify-content: space-between;
     top: 50%;
-    left: -80px;
+    left: -7.5%; /* Подвинем контейнер немного влево, чтобы стрелки располагались снаружи слайдера */
     transform: translateY(-50%);
-    z-index: 0;
-
+    z-index: 1; /* Увеличим z-index, чтобы стрелки были поверх */
 }
 .arrows img {
     width: 50px;
