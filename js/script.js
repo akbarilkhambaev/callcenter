@@ -74,12 +74,8 @@ function changeSlide(index) {
 var toggler = document.querySelector('.toggler');
 var navBar = document.querySelector('.nav-bar');
 
-addEventListener('click', function(){
-    toggler.classList.toggle('change');
-    
-});
-
-addEventListener('click', function(){
-    navBar.classList.toggle('hide-show');
+toggler.addEventListener('click', function(){
+        toggler.classList.toggle('change');
+        navBar.classList.toggle('hide-show');
 });
 
