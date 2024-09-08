@@ -98,7 +98,17 @@
     .form-map {
         width: 100% !important;
     }
-
+    .footer {
+        justify-content: space-between;
+    }
+    .footer ul {
+        width: 50% !important;
+    }
+    .form-b .form_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 

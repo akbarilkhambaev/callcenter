@@ -25,7 +25,7 @@
                     <a href="tel:+998773120000">+998 77 312 00 00</a>
                     <p>Заказать обратный звонок</p>
                 </div>
-                <button class="btn btn-danger">ОСТАВИТЬ ЗАЯВКУ!</button>
+                <button class="btn btn-danger"><a href="#feed_back">ОСТАВИТЬ ЗАЯВКУ!</a></button>
             </div>
         </div>
         <div class="container content-menu">
@@ -199,7 +199,7 @@
     <section id="partners">
         <h2>Наши партнеры</h2>
         <marquee behavior="scroll" direction="" scrollamount="15">
-            <div class="partners-container">
+            <div class="partners-container" id="partners-container">
                 <div class="partner">
                     <img src="images/partners(1).svg" alt="Партнер 1">
                 </div>
@@ -223,7 +223,7 @@
         </marquee>
         
     </section>
-    <section class="feed_back">
+    <section class="feed_back" id="feed_back">
        <div class="form-b">
            <form  method="POST">
             <h2>Обратная связь!</h2>
@@ -233,9 +233,10 @@
 
             <input type="email" id="email" name="email" placeholder=" Email:" required>
 
-            <textarea id="message" name="message" rows="4" placeholder=" Введите ваше сообщение" required></textarea>
+            <textarea id="message" name="message" rows="4" placeholder=" Введите ваше сообщение" ></textarea>
 
             <button type="submit" class="btn btn-light">Отправить</button>
+            <p class="form_text"></p>
        </div>
        <div class="form-map">
         <iframe src="https://yandex.uz/map-widget/v1/?feedback=object%2Fedit&feedback-context=map.controls&ll=69.248723%2C41.299717&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DIgoNx3-KQhXOMiVC&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=17.2" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
