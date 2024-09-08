@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider{
+    max-width: 100%;
+    height: 600px;
+    border: 2px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.inner .sliding{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.inner .active{
+    opacity: 1;
+}
+
+.arrows{
+    position: absolute;
+    width: 115%; /* Делаем контейнер шире слайдера */
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: -7.5%; /* Подвинем контейнер немного влево, чтобы стрелки располагались снаружи слайдера */
+    transform: translateY(-50%);
+    z-index: 1; /* Увеличим z-index, чтобы стрелки были поверх */
+}
+.arrows img {
+    width: 50px;
+    height: 50px;
+
+}
+.arrows button{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border: none;
+    opacity: 0.7;
+    background: none;
+}
+
+
+.arrows button:hover{
+    opacity: 1;
+}
+
+.indicators {
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.active-li {
+    background: #ffffff;
+}
+
+.sliding {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background:#222222 url('../images/bg-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+.text-slide {
+    width: 35%;
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-slide h2 {
+    color: #ffffff;
+    font-weight:600;
+    text-align: right;
+    padding-top: 5px;
+    
+}
+.text-slide h4 {
+    color: #af0000;
+    font-weight:400;
+    text-align: right;
+
+    
+}
+.text-slide p {
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    text-align: right;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.text-slide a {
+    color: #ffcc00;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    align-content: flex-end;
+}
+.slide-img {
+    width: 65%;
+    height: 90%;
+    border-radius: 8px;
+    padding: 10px;
+}
+.slide-img img {
+    max-width: 100%;
+    width: 85%;
+    height: 100lvh; /* Изображения будут сохранять пропорции */
+    object-fit: cover; /* Если нужно заполнение контейнера */
+}
+
+    </style>
+</head>
+<body>
+    <section class="container slide-show">
+
+        <div class="slider">
+            <div class="inner">
+                <div class="sliding active">
+                    <div class="text-slide">
+                        <h4>AKFA TERRACE SYSTEMS</h4>
+                        <h2>ГИЛЬОТИННЫЕ СИСТЕМЫ</h2>
+    
+                        <p>Оптимальное решение для террас и веранд баров, ресторанов и гостиниц. Вертикально поднимающиеся окна защитят гостей от сильного ветра, палящего солнца, дождя и пыли, а так же помогут обеспечить безопасность гостей и сохранность имущества.</p>
+                        <a href="#">Узнать больше... <i class="fa-sharp-duotone fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="slide-img">
+                        <img src="images/gilyatina.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="sliding ">
+                    <div class="text-slide">
+                        <h4>AKFA TERRACE SYSTEMS</h4>
+                        <h2>ПЕРГОЛА</h2>
+    
+                        <p>Тентовые перголы — один из наиболее эффективных и практичных видов зонирования открытого пространства. С помощью перголы можно обустроить зону отдыха во дворе загородного дома или на общественной территории. Тентовый навес позволяет отрегулировать уровень освещения и защититься от солнечных лучей и дождей.</p>
+    
+                        <a href="#">Узнать больше... <i class="fa-sharp-duotone fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="slide-img">
+                        <img src="images/pergola.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="sliding">
+                    <div class="text-slide">
+                        <h4>AKFA TERRACE SYSTEMS</h4>
+                        <h2>SLIDE MASTER</h2>
+    
+                        <p>SlideMaster - Раздвижная система со стеклопакетом - повышает стандарты систем остекления балконов. Раздвижные системы были улучшены с точки зрения изоляции, комфорта и эстетики. Благодаря этому, превратят ваши балконы, зимние сады и рестораны в удивительно теплые помещения.</p>
+    
+                        <a href="#">Узнать больше... <i class="fa-sharp-duotone fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="slide-img">
+                        <img src="images/slidemaster.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="sliding">
+                    <div class="text-slide">
+                        <h4>AKFA TERRACE SYSTEMS</h4>
+                        <h2>BKG-40</h2>
+    
+                        <p>Система раздвижных дверей BKG 40 («гармошка») является одним из лучших решений при зонировании пространства. Широко используются не только в частном, но и в коммерческом секторе.</p>
+    
+                        <a href="#">Узнать больше... <i class="fa-sharp-duotone fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="slide-img">
+                        <img src="images/bkg-40.jpg" alt="">
+                    </div>
+                    
+                </div>
+    
+
+            <ul class="indicators">
+                <li data-slider="0" class="active-li"></li>
+                <li data-slider="1"></li>
+                <li data-slider="2"></li>
+                <li data-slider="3"></li>
+
+            </ul>
+        </div>
+        <div class="arrows">
+            <button class="prev"><img src="images/strelka (1).svg" alt=""></button>
+            <button class="next"><img src="images/strelka (2).svg" alt=""></button>
+        </div>
+
+</section>
+
+
+</body>
+</html>

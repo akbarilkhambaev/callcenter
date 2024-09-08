@@ -15,7 +15,8 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;    
+    min-height: 100vh;
+    position: relative;    
 }
 header{
     width: 100%;
@@ -32,6 +33,7 @@ header{
     align-items: center;
     padding-top: 30px;  
     padding-bottom: 30px; 
+    position: relative;
 }
 .img{
     width: 200px;
@@ -48,7 +50,7 @@ header{
     line-height: 25px;
 }
 .call-back button {
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     margin-left:30px;
     border-radius: 8px;
@@ -77,7 +79,7 @@ header{
     padding: 10px;
     
 }
-.content-menu ul{
+.nav-bar{
     display: flex;
     flex-direction: row;
     color: #fff;
@@ -89,120 +91,45 @@ header{
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin: 0;
-    top:50%;
-    transform: translateY(-50%);
-    position: absolute;
+    top: 19rem;
     max-width: 100%;
-
+    transition: 0.5s;
 }
-.content-menu ul li {
+.nav-bar li {
     padding-right: 24.25px; 
     padding-left: 0;
     padding-bottom: 10px;   
     position: relative; /* Это нужно, чтобы сделать позиционирование псевдоэлемента относительно родителя */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.content-menu ul li a{
+.nav-bar li span {
+    margin-left: 5px;
+    margin-left: 5px;
+}
+.nav-bar li a{
     text-decoration: none;
     color: #fff ;
 
 }
-.content-menu ul li:hover, .content-menu ul li a:hover{
+.nav-bar li:hover, .nav-bar li a:hover{
     cursor: pointer;
     text-decoration: none; /* Убираем стандартное подчеркивание */
     color: #af0000;
     transition: 0.5s;
 }
 
-.content-menu ul li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px; /* Толщина линии */
-    background-color: #af0000; /* Цвет линии */
-    transition: width 0.3s ease; /* Плавное появление линии */
-}
 
-.content-menu ul li:hover::after {
-    width: 76%; /* Линия растягивается по всей ширине элемента при наведении */
-}
 .r-menu a{
     font-size: auto;
     color: #fff;
     text-decoration: none;
 }
-.r-menu img {
+.l-menu img {
     width: 32px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.sliding {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background:#222222 url('../images/bg-2.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    padding: 10px;
-    margin: 0 auto;
-
-}
-.text-slide {
-    width: 35%;
-    height: 400px;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: right;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
 }
 
-.text-slide h2 {
-    color: #ffffff;
-    font-weight:600;
-    text-align: right;
-    padding-top: 5px;
-    
-}
-.text-slide h4 {
-    color: #af0000;
-    font-weight:400;
-    text-align: right;
-
-    
-}
-.text-slide p {
-    color: rgb(255, 255, 255);
-    font-weight:400;
-    text-align: right;
-    line-height: 30px;
-    font-size: 20px;
-}
-
-.text-slide a {
-    color: #ffcc00;
-    font-weight: 600;
-    width: 100%;
-    display: inline-block;
-    text-decoration: none;
-}
-.slide-img {
-    width: 64%;
-    height: 90%;
-    border-radius: 8px;
-    padding: 10px;
-}
-.slide-img img {
-    width: 100%;
-    height: 100%;
-}
 
 .benefit{
     width: 100%;
@@ -451,3 +378,49 @@ footer {
     left: 30%; /* Линия выезжает с правой стороны */
     width: 70%; /* Линия покрывает весь текст */
 }
+
+.slide-img img {
+    max-width: 100%;
+    height: auto; /* Изображения будут сохранять пропорции */
+    object-fit: cover; /* Если нужно заполнение контейнера */
+}
+
+.text-slide h2 {
+    font-size: 2rem !important; /* вместо фиксированного размера */
+}
+
+.text-slide p {
+    font-size: 1rem !important;
+}
+
+.toggler {
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.bar , .bar1, .bar2 {
+    width: 3rem;
+    height: 0.3rem;
+    background: #fff;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}  
+.change .bar {
+    transform: translate(0, 0.9rem) rotate(-45deg);
+
+}
+.change .bar1 {
+    opacity: 0;
+    width: 0;
+}
+
+.change .bar2 {
+    transform: translate(0, -0.9rem) rotate(45deg);
+}
+
+.toggler{
+    display: none;
+}
+
