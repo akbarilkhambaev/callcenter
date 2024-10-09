@@ -1,448 +1,730 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
-p{
-    margin: 0;
-    padding: 0;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background:url('../images/body-bg.png') center center;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative;    
+  background: url('../images/body-bg.png') center center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
 }
-header{
-    width: 100%;
-    height: 100%;
-    background: #222222 url('../images/background-sliding.jpg');
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
+header {
+  width: 100%;
+  height: 100%;
+  background: #222222 url('../images/background-sliding.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
 }
 
 .container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;  
-    padding-bottom: 30px; 
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
 }
-.img{
-    width: 200px;
-
+.img {
+  width: 200px;
 }
 .call-back {
-    color: #FFF;
-    text-align: left;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
 }
 .call-back button {
-    max-width: 200px;
-    height: 50px;
-    margin-left:30px;
-    border-radius: 8px;
-    background: #af0000;
+  max-width: 200px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 8px;
+  background: #af0000;
 }
 .feed-back a {
-    text-decoration: none;
-    font-size: 27px;
-    color: #af0000;
-    font-weight: 700;
-
+  text-decoration: none;
+  font-size: 27px;
+  color: #af0000;
+  font-weight: 700;
 }
 .feed-back {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .content-menu {
-    border-top: 1px solid #fff;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-    padding: 10px;
-    
+  border-top: 1px solid #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 10px;
 }
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    list-style: none;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    padding: 0;
-    margin: 0;
-    top: 19rem;
-    max-width: 100%;
-    transition: 0.5s;
-    width: 100%;
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  list-style: none;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+  top: 19rem;
+  max-width: 100%;
+  transition: 0.5s;
+  width: 100%;
 }
 .nav-bar li {
-    padding-right: 24.25px; 
-    padding-left: 0;
-    padding-bottom: 10px;   
-    position: relative; /* Это нужно, чтобы сделать позиционирование псевдоэлемента относительно родителя */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer !important;
+  padding-right: 24.25px;
+  padding-left: 0;
+  padding-bottom: 10px;
+  position: relative; /* Это нужно, чтобы сделать позиционирование псевдоэлемента относительно родителя */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer !important;
 }
 .nav-bar li span {
-    margin-left: 5px;
-    margin-left: 5px;
+  margin-left: 5px;
+  margin-left: 5px;
 }
-.nav-bar li a{
-    text-decoration: none;
-    color: #fff ;
-    cursor: pointer;
+.nav-bar li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
-.nav-bar li:hover, .nav-bar li a:hover{
-    cursor: pointer;
-    text-decoration: none; /* Убираем стандартное подчеркивание */
-    color: #af0000;
-    transition: 0.5s;
+.nav-bar li:hover,
+.nav-bar li a:hover {
+  cursor: pointer;
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  color: #af0000;
+  transition: 0.5s;
 }
 
-
-.r-menu a{
-    font-size: auto;
-    color: #fff;
-    text-decoration: none;
+.r-menu a {
+  font-size: auto;
+  color: #fff;
+  text-decoration: none;
 }
 .l-menu img {
-    width: 32px;
+  width: 32px;
 }
 
-
-.benefit{
-    width: 100%;
-    height: auto;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: #af0000;
-    color: #fff;
-
+.benefit {
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #af0000;
+  color: #fff;
 }
 .benefit h1 {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-.benefit ul{
-    display: flex;
-    padding: 10px;
-    margin-bottom: 0;
-    justify-content: space-between;
-    width: 100%;
+.benefit ul {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 0;
+  justify-content: space-between;
+  width: 100%;
 }
 .benefit ul li {
-    list-style: none;
-    padding: 5px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
-    height: 150px;
+  list-style: none;
+  padding: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  height: 150px;
 }
 .benefit ul li img {
-    width: 100px;
-    color: #fff;
+  width: 100px;
+  color: #fff;
 }
 .benefit ul li p {
-    font-size: 25px;
-    padding-top: 10px;
+  font-size: 25px;
+  padding-top: 10px;
 }
 
 #our-projects {
-    background-color: #f9f9f9;
-    padding: 50px 0;
+  background-color: #f9f9f9;
+  padding: 50px 0;
 }
 
 #our-projects .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #our-projects h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #333;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
 }
 
 #our-projects .project {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #our-projects .project-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 #our-projects .project-image {
-    flex: 1;
-    padding: 0 20px;
+  flex: 1;
+  padding: 0 20px;
 }
 
 #our-projects .project-image img {
-    max-width: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 #our-projects .project-text {
-    flex: 1;
-    padding: 0 20px;
+  flex: 1;
+  padding: 0 20px;
 }
 
 #our-projects .project-text h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 #our-projects .project-text p {
-    font-size: 16px;
-    color: #666;
+  font-size: 16px;
+  color: #666;
 }
 
 #our-projects .project-text p strong {
-    color: #333;
+  color: #333;
 }
 
 /* Чередование стилей */
 .left-text {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .right-text {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 /* Для мобильных устройств */
 
 #partners {
-    padding: 20px;
-    background-color: #222222;
-    text-align: center;
+  padding: 20px;
+  background-color: #222222;
+  text-align: center;
 }
 
 #partners h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #ffffff;
 }
 .feed_back {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .partners-container {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
 }
 
 .partner img {
-    width: 250px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    filter: grayscale(100%);
+  width: 250px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: grayscale(100%);
 }
 
 .partner img:hover {
-    transform: scale(1.1);
-    filter: grayscale(0);
+  transform: scale(1.1);
+  filter: grayscale(0);
 }
 .form-b {
-    width: 50%;
-    height: auto;
-    background: url('../images/call-back.jpg') no-repeat center center; /* Фоновое изображение */
-    background-size: cover; /* Размер изображения */
-    color: #fff; /* Цвет текста */
-    position: relative;
+  width: 50%;
+  height: auto;
+  background: url('../images/call-back.jpg') no-repeat center center; /* Фоновое изображение */
+  background-size: cover; /* Размер изображения */
+  color: #fff; /* Цвет текста */
+  position: relative;
 }
 
 .form-b::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(175, 0, 0, 0.85); /* Полупрозрачный цвет для наложения */
-    z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(175, 0, 0, 0.85); /* Полупрозрачный цвет для наложения */
+  z-index: 1;
 }
 
 .form-b * {
-    position: relative;
-    z-index: 2; /* Элементы внутри блока выше слоя с цветом */
+  position: relative;
+  z-index: 2; /* Элементы внутри блока выше слоя с цветом */
 }
 .form-b form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 300px;
-    margin: 50px auto;  
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 300px;
+  margin: 50px auto;
 }
 .form-b input {
-    width: 300px;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    padding-left: 10px;
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-left: 10px;
 }
 .form-b textarea {
-    margin-top: 10px;
-    padding: 5px;
-    padding-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-left: 10px;
 }
 
-.form-b .form_text{
-    width: 300px;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    background: #fff;
-    display: none;
-    border-radius: 8px;
+.form-b .form_text {
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  background: #fff;
+  display: none;
+  border-radius: 8px;
 }
 .form-b button {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .form-map {
-    width: 50%;
+  width: 50%;
 }
 .form-map iframe {
-    width: 100%;
-    height: 601.11px;
+  width: 100%;
+  height: 601.11px;
 }
 footer {
-    margin-top: auto;
-    background: linear-gradient(to right,#222222, #000000, #222222);
+  margin-top: auto;
+  background: linear-gradient(to right, #222222, #000000, #222222);
 }
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .footer ul {
-    color: #fff;
-    padding: 10px;
+  color: #fff;
+  padding: 10px;
 }
-.footer ul li, .footer ul li a {
-    color: #919191;
-    list-style: none ;
-    text-decoration: none;
+.footer ul li,
+.footer ul li a {
+  color: #919191;
+  list-style: none;
+  text-decoration: none;
 }
 .footer ul li a:hover {
-    color: #af0000;
-    transition: 0.5s;
+  color: #af0000;
+  transition: 0.5s;
 }
 .footer h3 {
-    position: relative;
-    text-decoration: underline; /* или overline */
-    text-decoration-color: #af0000;
-    color: #c5c5c5;
-    text-underline-offset: 10px;
-    padding-bottom: 10px;
+  position: relative;
+  text-decoration: underline; /* или overline */
+  text-decoration-color: #af0000;
+  color: #c5c5c5;
+  text-underline-offset: 10px;
+  padding-bottom: 10px;
 }
 .footer h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 100%; /* Начало линии с середины текста */
-    width: 0%; /* Длина линии до конца текста */
-    height: 2.5px; /* Толщина линии */
-    background-color: #fff; /* Цвет второй половины линии */
-    transform: translateY(-50%);
-    z-index: 1;
-    transition: width 0.3s ease, left 0.3s ease; /* Плавный переход */
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 100%; /* Начало линии с середины текста */
+  width: 0%; /* Длина линии до конца текста */
+  height: 2.5px; /* Толщина линии */
+  background-color: #fff; /* Цвет второй половины линии */
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: width 0.3s ease, left 0.3s ease; /* Плавный переход */
 }
 .footer h3:hover::after {
-    left: 30%; /* Линия выезжает с правой стороны */
-    width: 70%; /* Линия покрывает весь текст */
+  left: 30%; /* Линия выезжает с правой стороны */
+  width: 70%; /* Линия покрывает весь текст */
 }
 
 .slide-img img {
-    max-width: 100%;
-    height: auto; /* Изображения будут сохранять пропорции */
-    object-fit: cover; /* Если нужно заполнение контейнера */
+  max-width: 100%;
+  height: auto; /* Изображения будут сохранять пропорции */
+  object-fit: cover; /* Если нужно заполнение контейнера */
 }
 
 .text-slide h2 {
-    font-size: 2rem !important; /* вместо фиксированного размера */
+  font-size: 2rem !important; /* вместо фиксированного размера */
 }
 
 .text-slide p {
-    font-size: 1rem !important;
+  font-size: 1rem !important;
 }
 
 .toggler {
-    display: inline-block;
-    cursor: pointer;
-
+  display: inline-block;
+  cursor: pointer;
 }
 
-.bar , .bar1, .bar2 {
-    width: 3rem;
-    height: 0.3rem;
-    background: #fff;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    transition: 0.3s;
-}  
+.bar,
+.bar1,
+.bar2 {
+  width: 3rem;
+  height: 0.3rem;
+  background: #fff;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
 .change .bar {
-    transform: translate(0, 0.9rem) rotate(-45deg);
-
+  transform: translate(0, 0.9rem) rotate(-45deg);
 }
 .change .bar1 {
-    opacity: 0;
-    width: 0;
+  opacity: 0;
+  width: 0;
 }
 
 .change .bar2 {
-    transform: translate(0, -0.9rem) rotate(45deg);
+  transform: translate(0, -0.9rem) rotate(45deg);
 }
 
-.toggler{
-    display: none;
+.toggler {
+  display: none;
 }
 
-.call-back .btn a{
-    color: #fff !important;
-    text-decoration: none !important; 
+.call-back .btn a {
+  color: #fff !important;
+  text-decoration: none !important;
 }
 .error {
-    border: 3px solid #000000;
+  border: 3px solid #000000;
+}
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+  background-color: #333;
+  padding: 20px;
+  padding-bottom: 65px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+
+.product img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.product-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-info h2 {
+  color: #f00;
+  padding: 10px 0;
+}
+
+.product-info p {
+  margin: 10px 0;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.product-info button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-info button:hover {
+  background-color: #b30000;
+}
+
+.content {
+  text-align: center;
+  margin: auto;
+  background: #222222;
+  width: 100%;
+}
+.header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.description {
+  width: 100%;
+  background: #000;
+  position: relative;
+  opacity: 0; /* Изначально элемент невидим */
+  max-height: 0; /* Изначально высота элемента равна 0 */
+  overflow: hidden; /* Скрываем содержимое при уменьшенной высоте */
+  transition: opacity 1s, max-height 1s;
+  margin-bottom: 10px;
+}
+.description_show {
+  opacity: 1;
+  max-height: 1000px;
+}
+.description h2 {
+  color: #fff;
+  padding: 30px 15px 55px;
+  text-align: left;
+  padding-left: 50px;
+  position: relative;
+  z-index: 32;
+}
+.description p {
+  color: rgb(145, 145, 145);
+  padding: 0 15px 55px;
+  position: relative;
+}
+
+.desc_n h2:after {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 15px;
+  width: 70px;
+  height: 1px;
+  top: -2px;
+  vertical-align: middle;
+  background: #e54b4b;
+  content: '';
+}
+
+.desc_n h2 span {
+  position: absolute;
+  color: rgba(145, 145, 145, 0.17);
+  right: 50px;
+  top: 0;
+  font-size: 80px;
+  z-index: 31;
+}
+
+.description ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  background: #af0000;
+}
+
+.description ul li {
+  width: 33.33%;
+  list-style: none;
+  background: #af0000;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description ul li img {
+  width: 60px;
+  height: 60px;
+}
+
+.description ul li h3 {
+  color: #fff;
+}
+
+.description ul li p {
+  color: #fff;
+}
+
+.desc_n_2 h2:after {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 15px;
+  width: 70px;
+  height: 1px;
+  top: -2px;
+  vertical-align: middle;
+  background: #f9f9f9;
+  content: '';
+}
+
+.desc_n_2 h2 span {
+  position: absolute;
+  color: rgba(145, 145, 145, 0.8);
+  right: 50px;
+  top: 0;
+  font-size: 80px;
+  z-index: 31;
+}
+
+.desc_n_2 h2 {
+  background: #af0000;
+  margin-bottom: 0;
+  padding-bottom: 55px;
+}
+.button_absolute {
+  width: 100%;
+  position: absolute;
+  margin-top: 0;
+  padding: 0;
+  left: 0;
+  top: 100%;
+  transform: translateY(-100%);
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: white;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
+
+.about_us h1 {
+  text-align: center;
+  padding: 10px;
+}
+.about_us p {
+  padding: 10px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  padding-top: 10px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.contact-details {
+  max-width: 20%;
+  width: 100%;
+}
+.contact-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  padding-top: 10px;
+}
+
+.contact-form {
+  padding-bottom: 40px;
+  max-width: 80%;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
 }
